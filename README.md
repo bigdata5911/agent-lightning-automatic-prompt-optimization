@@ -106,11 +106,7 @@ algo = APO[Dict[str, Any]](
 └── apo.log              # Optimization logs (generated during training)
 ```
 
-## License
-
-[Add your license information here]
-
 ## References
 
-- [Agent-Lightning](https://github.com/agent-lightning/agent-lightning)
+- [Agent-Lightning](https://microsoft.github.io/agent-lightning/stable/)
 - [Spider Dataset](https://yale-lily.github.io/spider)
