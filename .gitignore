@@ -1,0 +1,233 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# uv package manager
+uv.lock
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Agent Lightning Specific
+# Training artifacts
+checkpoints/
+*.ckpt
+*.pth
+*.safetensors
+
+# Logs
+logs/
+*.log
+apo.log
+training.log
+wandb/
+.wandb/
+
+# LightningStore databases
+*.db
+*.sqlite
+lightning_store.db
+
+# Model files (if downloaded locally)
+models/
+*.bin
+*.pt
+*.model
+
+# API Keys and Secrets
+.env
+.env.local
+.env.*.local
+secrets.yaml
+secrets.json
+*.key
+api_keys.txt
+.openai_api_key
+
+# Data files (Spider databases can be large)
+# Ignore contents but keep directory structure
+data/*
+!data/.gitkeep
+!data/README.md
+
+/databases
+!databases/.gitkeep
+!databases/README.md
+
+# Data file formats
+*.parquet
+*.csv
+*.json.gz
+*.jsonl
+
+# Outputs
+results/
+outputs/
+experiments/
+runs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# WandB (Weights & Biases)
+wandb/
+.wandb/
+
+# Ray (if using distributed training)
+/tmp/ray/
+ray_results/
+
+# HuggingFace cache
+.cache/
+huggingface/
+
+# Downloaded datasets
+spider/
+spider.zip
+spider-*.zip
+train_spider.parquet
+train_gold.sql
+tables.json
+database/
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Package manager
+pip-log.txt
+pip-delete-this-directory.txt
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
+site/
+
+# Backup files
+*.backup
+*.old
+*~
+
+# macOS specific
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+/docs

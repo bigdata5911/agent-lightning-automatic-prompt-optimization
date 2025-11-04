@@ -1,0 +1,51 @@
+[project]
+name = "sql-agent-apo"
+version = "0.1.0"
+description = "SQL Agent with APO (Automatic Prompt Optimization) using Agent-Lightning and GPT-5"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # Agent-Lightning with APO support
+    "agentlightning>=0.2.1",
+    "poml",  # Required for APO (uses latest: 0.0.8)
+
+    # OpenAI
+    "openai>=2.0.0",
+
+    # LangChain & LangGraph (v1.0.x)
+    "langchain>=1.0.0",
+    "langchain-community>=0.4.0",
+    "langchain-openai>=1.0.0",
+    "langchain-text-splitters>=1.0.0",
+    "langgraph>=1.0.0",
+
+    # Database & SQL
+    "sqlparse>=0.5.0",
+
+    # Spider evaluation dependencies (for local spider_eval module)
+    "tqdm>=4.65.0",
+    "nltk>=3.8.0",
+
+    # Data processing
+    "pandas>=2.0.0",
+
+    # Utilities
+    "rich>=13.0.0",  # For better logging
+    "python-dotenv>=1.0.0",  # .env file support
+    "langsmith>=0.2.0",  # LangSmith tracing
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["spider_eval"]  # Include spider_eval module
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
