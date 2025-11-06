@@ -108,5 +108,6 @@ algo = APO[Dict[str, Any]](
 
 ## References
 
+- [Dev Article](https://dev.to/bigdata5911/rethinking-prompt-engineering-how-agent-lightnings-apo-teaches-agents-to-write-better-prompts-hon)
 - [Agent-Lightning](https://microsoft.github.io/agent-lightning/stable/)
 - [Spider Dataset](https://yale-lily.github.io/spider)
